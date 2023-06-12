@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.visual_lab4_smiley.HelloController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="39.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="awake" mnemonicParsing="false" onAction="#onAwake" prefWidth="70.0" text="Awake" />
+            <Button fx:id="asleep" mnemonicParsing="false" onAction="#onAsleep" prefWidth="70.0" text="Asleep" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#fff51f" radius="174.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line fx:id="rightEye" endX="100.0" startX="5.5" strokeWidth="3.0" translateX="70.0" translateY="-50.0" />
+            <Line fx:id="leftEye" endX="100.0" layoutX="158.0" layoutY="191.0" startX="5.5" strokeWidth="3.0" translateX="-70.0" translateY="-50.0" />
+            <Circle fx:id="leftEyeCircle" stroke="BLACK" strokeType="INSIDE" translateX="-70.0" translateY="-50.0" />
+            <Circle fx:id="rightEyeCircle" stroke="BLACK" strokeType="INSIDE" translateX="70.0" translateY="-50.0" />
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

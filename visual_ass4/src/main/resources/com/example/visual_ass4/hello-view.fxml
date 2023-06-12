@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="68.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <GridPane gridLinesVisible="true" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="10.0" prefWidth="275.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="10.0" prefWidth="275.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="218.0" minHeight="10.0" prefHeight="201.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="201.0" prefWidth="275.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="100.0" text="Latte" />
+                        <TextField maxHeight="10.0" prefHeight="0.0" prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="100.0" text="Espresso" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="111.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="100.0" text="Mocha" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="144.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="100.0" text="ValeCoffee" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="162.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="100.0" text="Cappucino" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="171.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="100.0" text="Cold Coffee" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="178.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="100.0" text="Milk Tea" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="183.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="100.0" text="Chinese Tea" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" />
+               </GridPane.margin>
+            </VBox>
+            <VBox layoutX="20.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="201.0" prefWidth="275.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="200.0" text="Coffee Cake" />
+                        <TextField maxHeight="10.0" prefHeight="0.0" prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="200.0" text="Red Velvet Cake" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="111.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="200.0" text="Blackforest cake" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="144.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="200.0" text="Boston Cream Cake" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="162.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="200.0" text="Lagos Chocolate Cake" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="171.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="200.0" text="Kilburn Chocolate Cake" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="178.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="200.0" text="Cheese Cake" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="183.0" prefHeight="201.0" prefWidth="283.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="200.0" text="Rainbow Cake" />
+                        <TextField prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </GridPane>
+   </center>
+   <right>
+      <VBox prefHeight="301.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </ScrollPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

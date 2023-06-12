@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="540.0" vgap="5.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.student_record.StudentGradingController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="128.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="172.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="192.0" minHeight="0.0" prefHeight="19.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="192.0" minHeight="10.0" prefHeight="12.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="462.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="492.0" minHeight="9.0" prefHeight="21.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="485.0" minHeight="0.0" prefHeight="107.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="416.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="362.0" minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="314.0" minHeight="10.0" prefHeight="149.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="295.0" minHeight="0.0" prefHeight="25.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="295.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="295.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label prefHeight="27.0" prefWidth="178.0" style="-fx-font-weight: bold;" text="STUDENT RECORD" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <GridPane.margin>
+                <Insets top="10.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label style="-fx-font-weight: bold;" text="STUDENT ID :" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+        <Label style="-fx-font-weight: bold;" text="Firstname :  " GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+        <Label style="-fx-font-weight: bold;" text="Lastname :" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+        <TextField fx:id="tfStudentId" maxWidth="118.0" prefHeight="25.0" prefWidth="118.0" style="-fx-font-style: bold;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+        <TextField fx:id="tfLastName" style="-fx-font-style: bold;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets right="25.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="tfFirstName" prefHeight="25.0" prefWidth="270.0" style="-fx-font-style: bold;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <StackPane maxHeight="80.0" maxWidth="214.0" minHeight="0.0" prefHeight="23.0" prefWidth="214.0" style="-fx-border-color: GRAY; -fx-border-radius: 5;" GridPane.columnSpan="2" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets left="25.0" top="15.0" />
+            </GridPane.margin>
+            <children>
+                <Label prefHeight="17.0" prefWidth="214.0" style="-fx-background-color: #f4f0ec;" text=" Attendance     20         EG        10%">
+                    <StackPane.margin>
+                        <Insets left="5.0" right="20.0" top="-80.0" />
+                    </StackPane.margin>
+                </Label>
+                <HBox maxHeight="50.0" prefHeight="50.0" prefWidth="212.0" spacing="12.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="42.0" style="-fx-font-weight: bold;" text="Score" />
+                        <TextField fx:id="tfAttendanceScore" prefHeight="25.0" prefWidth="30.0">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="attendaceEG" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: green;" />
+                        <TextField fx:id="attendance10" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: green;" />
+                    </children>
+                    <StackPane.margin>
+                        <Insets />
+                    </StackPane.margin>
+                    <padding>
+                        <Insets left="10.0" top="15.0" />
+                    </padding>
+                </HBox>
+            </children>
+        </StackPane>
+        <StackPane maxHeight="80.0" maxWidth="214.0" minHeight="0.0" prefHeight="80.0" prefWidth="214.0" style="-fx-border-color: GRAY; -fx-border-radius: 5;" GridPane.columnSpan="2" GridPane.rowIndex="5">
+            <children>
+                <Label prefHeight="17.0" prefWidth="214.0" style="-fx-background-color: #f4f0ec;" text=" Written Quiz    50         EG        10%">
+                    <StackPane.margin>
+                        <Insets left="5.0" right="10.0" top="-80.0" />
+                    </StackPane.margin>
+                </Label>
+                <HBox maxHeight="50.0" prefHeight="50.0" prefWidth="212.0" spacing="12.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="42.0" style="-fx-font-weight: bold;" text="Score" />
+                        <TextField fx:id="tfWrittenScore" prefHeight="25.0" prefWidth="30.0">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="writtenEG" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: green;" />
+                        <TextField fx:id="written10" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: green;" />
+                    </children>
+                    <StackPane.margin>
+                        <Insets />
+                    </StackPane.margin>
+                    <padding>
+                        <Insets left="10.0" top="15.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <GridPane.margin>
+                <Insets left="25.0" top="15.0" />
+            </GridPane.margin>
+        </StackPane>
+        <StackPane maxHeight="80.0" maxWidth="214.0" minHeight="0.0" prefHeight="80.0" prefWidth="214.0" style="-fx-border-color: GRAY; -fx-border-radius: 5;" GridPane.columnSpan="2" GridPane.rowIndex="6">
+            <children>
+                <Label prefHeight="17.0" prefWidth="214.0" style="-fx-background-color: #f4f0ec;" text="Practical Quiz    50         EG        20%">
+                    <StackPane.margin>
+                        <Insets left="5.0" right="10.0" top="-80.0" />
+                    </StackPane.margin>
+                </Label>
+                <HBox maxHeight="50.0" prefHeight="50.0" prefWidth="212.0" spacing="12.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="42.0" style="-fx-font-weight: bold;" text="Score" />
+                        <TextField fx:id="tfPracticalScore" prefHeight="25.0" prefWidth="30.0">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="practitalEG" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: green;" />
+                        <TextField fx:id="practical20" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: green;" />
+                    </children>
+                    <StackPane.margin>
+                        <Insets />
+                    </StackPane.margin>
+                    <padding>
+                        <Insets left="10.0" top="15.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <GridPane.margin>
+                <Insets left="25.0" top="15.0" />
+            </GridPane.margin>
+        </StackPane>
+        <StackPane maxHeight="80.0" maxWidth="238.0" minHeight="0.0" prefHeight="80.0" prefWidth="238.0" style="-fx-border-color: GRAY; -fx-border-radius: 5;" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4">
+            <children>
+                <Label prefHeight="17.0" prefWidth="214.0" style="-fx-background-color: #f4f0ec;" text=" Project           100         EG        30%">
+                    <StackPane.margin>
+                        <Insets left="5.0" right="10.0" top="-80.0" />
+                    </StackPane.margin>
+                </Label>
+                <HBox maxHeight="50.0" prefHeight="50.0" prefWidth="212.0" spacing="12.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="42.0" style="-fx-font-weight: bold;" text="Score" />
+                        <TextField fx:id="tfProjectScore" prefHeight="25.0" prefWidth="30.0">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="projectEG" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: green;" />
+                        <TextField fx:id="project30" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: green;" />
+                    </children>
+                    <StackPane.margin>
+                        <Insets />
+                    </StackPane.margin>
+                    <padding>
+                        <Insets left="10.0" top="15.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <GridPane.margin>
+                <Insets left="35.0" top="15.0" />
+            </GridPane.margin>
+        </StackPane>
+        <StackPane maxHeight="80.0" maxWidth="234.0" minHeight="0.0" prefHeight="80.0" prefWidth="234.0" style="-fx-border-color: GRAY; -fx-border-radius: 5;" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5">
+            <children>
+                <Label prefHeight="17.0" prefWidth="214.0" style="-fx-background-color: #f4f0ec;" text=" Prelim Exam   100         EG        30%">
+                    <StackPane.margin>
+                        <Insets left="5.0" right="10.0" top="-86.0" />
+                    </StackPane.margin>
+                </Label>
+                <HBox maxHeight="50.0" prefHeight="50.0" prefWidth="237.0" spacing="12.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="42.0" style="-fx-font-weight: bold;" text="Score" />
+                        <TextField fx:id="tfPrelimScore" prefHeight="25.0" prefWidth="30.0">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="prelimEG" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: green;" />
+                        <TextField fx:id="prelim30" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: green;" />
+                    </children>
+                    <StackPane.margin>
+                        <Insets />
+                    </StackPane.margin>
+                    <padding>
+                        <Insets left="10.0" top="15.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <GridPane.margin>
+                <Insets left="35.0" top="15.0" />
+            </GridPane.margin>
+        </StackPane>
+        <StackPane maxHeight="80.0" maxWidth="236.0" minHeight="0.0" prefHeight="80.0" prefWidth="210.0" style="-fx-border-color: GRAY; -fx-border-radius: 5;" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6">
+            <children>
+                <Label prefHeight="17.0" prefWidth="214.0" style="-fx-background-color: #f4f0ec;" text="PRELIM COMPUTED  ">
+                    <StackPane.margin>
+                        <Insets left="10.0" right="88.0" top="-80.0" />
+                    </StackPane.margin>
+                </Label>
+                <HBox maxHeight="50.0" prefHeight="50.0" prefWidth="212.0" spacing="12.0">
+                    <StackPane.margin>
+                        <Insets left="5.0" />
+                    </StackPane.margin>
+                    <children>
+                        <GridPane hgap="8.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label style="-fx-font-weight: bold;" text="Prelim Grade :" />
+                                <Label style="-fx-font-weight: bold;" text="Remarks :" GridPane.columnIndex="1" />
+                                <TextField fx:id="premilGrade" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: green;" GridPane.rowIndex="1" />
+                                <TextField fx:id="remarks" style="-fx-background-color: green;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            </children>
+                            <HBox.margin>
+                                <Insets left="5.0" right="15.0" />
+                            </HBox.margin>
+                        </GridPane>
+                    </children>
+                </HBox>
+            </children>
+            <GridPane.margin>
+                <Insets left="35.0" />
+            </GridPane.margin>
+        </StackPane>
+        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnSpan="4" GridPane.rowIndex="7">
+            <children>
+                <Label style="-fx-font-weight: bold;" text="Results" />
+            <ScrollPane prefHeight="200.0" prefWidth="200.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="336.0" prefWidth="876.0">
+                     <children>
+                            <TableView fx:id="tableOfStudent">
+                                <columns>
+                                    <TableColumn fx:id="tvStudentID" prefWidth="75.0" text="STUDENTID" />
+                                    <TableColumn fx:id="tvFirstName" prefWidth="75.0" text="Firstname" />
+                                    <TableColumn fx:id="tvLastName" prefWidth="75.0" text="Lastname" />
+                                    <TableColumn fx:id="tv20" prefWidth="75.0" text="20" />
+                                    <TableColumn fx:id="tvEG" prefWidth="75.0" text="EG" />
+                                    <TableColumn fx:id="tv10Percent" prefWidth="75.0" text="10%" />
+                                    <TableColumn fx:id="tv50" prefWidth="75.0" text="50" />
+                                    <TableColumn prefWidth="75.0" text="EG" />
+                                    <TableColumn prefWidth="75.0" text="10%" />
+                                    <TableColumn prefWidth="75.0" text="50" />
+                                    <TableColumn prefWidth="75.0" text="EG" />
+                                    <TableColumn prefWidth="75.0" text="20%" />
+                                    <TableColumn prefWidth="75.0" text="100" />
+                                    <TableColumn prefWidth="75.0" text="30%" />
+                                    <TableColumn prefWidth="75.0" text="100" />
+                                    <TableColumn prefWidth="75.0" text="EG" />
+                                    <TableColumn prefWidth="75.0" text="30%" />
+                                    <TableColumn prefWidth="75.0" text="Prelim Grade" />
+                                    <TableColumn prefWidth="75.0" text="Remarks" />
+                                </columns>
+                            </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            </children>
+            <GridPane.margin>
+                <Insets left="25.0" right="25.0" />
+            </GridPane.margin>
+        </VBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnSpan="4" GridPane.rowIndex="8">
+            <children>
+                <Button mnemonicParsing="false" onAction="#clearAllGrades" text="Clear All Grades :" />
+                <Button mnemonicParsing="false" onAction="#computeGrades" text="Compute Grades" />
+                <Button mnemonicParsing="false" onAction="#LoadGrades" text="Load Students" />
+                <Button mnemonicParsing="false" onAction="#SaveRecords" text="Save Records" />
+            </children>
+            <GridPane.margin>
+                <Insets left="25.0" right="25.0" />
+            </GridPane.margin>
+            <padding>
+                <Insets left="50.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnSpan="4" GridPane.rowIndex="9">
+            <children>
+                <Button mnemonicParsing="false" onAction="#showDetails" text="Show Details" />
+                <Button mnemonicParsing="false" onAction="#DeleteRecord" text="Delete Record" />
+                <Button mnemonicParsing="false" onAction="#UpdateRecord" text="Update Record" />
+                <Button mnemonicParsing="false" onAction="#exit" text="Exit Program" />
+            </children>
+            <GridPane.margin>
+                <Insets left="25.0" right="25.0" />
+            </GridPane.margin>
+            <padding>
+                <Insets left="60.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnSpan="4" GridPane.rowIndex="10">
+            <children>
+                <Button mnemonicParsing="false" onAction="#goToFirst" text="&lt;&lt;" />
+                <Button mnemonicParsing="false" onAction="#goToBefore" text="&lt;" />
+                <Button mnemonicParsing="false" onAction="#goToNext" text="&gt;" />
+                <Button mnemonicParsing="false" onAction="#goToLast" text="&gt;&gt;" />
+            </children>
+            <GridPane.margin>
+                <Insets bottom="10.0" left="25.0" right="25.0" />
+            </GridPane.margin>
+            <padding>
+                <Insets left="180.0" />
+            </padding>
+        </HBox>
+        <Separator prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="1" />
+    </children>
+</GridPane>

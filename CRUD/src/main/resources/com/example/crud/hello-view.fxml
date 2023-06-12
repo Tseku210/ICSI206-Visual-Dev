@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crud.HelloController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="388.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="248.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="95.0" text="Customer ID:   " />
+                  <TextField fx:id="tfCustId" prefHeight="26.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="20.0" prefHeight="24.0" prefWidth="248.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="95.0" text="Company Name:" />
+                  <TextField fx:id="tfCompName" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="56.0" prefHeight="24.0" prefWidth="248.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="95.0" text="Contact Name:" />
+                  <TextField fx:id="tfContactName" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="92.0" prefHeight="24.0" prefWidth="248.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="95.0" text="Contact Title:" />
+                  <TextField fx:id="tfContactTitle" prefHeight="26.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="128.0" prefHeight="82.0" prefWidth="368.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="95.0" text="Address:" />
+                  <TextArea fx:id="taAddress" prefHeight="41.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="92.0" prefHeight="24.0" prefWidth="248.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="95.0" text="City:" />
+                  <TextField fx:id="tfCity" prefWidth="90.0" />
+                  <Label layoutX="10.0" layoutY="15.0" prefHeight="17.0" prefWidth="50.0" text="Region:" />
+                  <TextField fx:id="tfRegion" layoutX="119.0" layoutY="10.0" prefWidth="90.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="256.0" prefHeight="24.0" prefWidth="248.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="95.0" text="Postal Code:" />
+                  <TextField fx:id="tfPostalCode" prefWidth="90.0" />
+                  <Label layoutX="10.0" layoutY="15.0" prefHeight="17.0" prefWidth="50.0" text="Country:" />
+                  <TextField fx:id="tfCountry" layoutX="119.0" layoutY="10.0" prefWidth="90.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="292.0" prefHeight="24.0" prefWidth="248.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="95.0" text="Phone:" />
+                  <TextField fx:id="tfPhone" prefWidth="90.0" />
+                  <Label layoutX="10.0" layoutY="15.0" prefHeight="17.0" prefWidth="50.0" text="Fax:" />
+                  <TextField fx:id="tfFax" layoutX="119.0" layoutY="10.0" prefWidth="90.0" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#onAdd" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: green;" text="Add" textFill="WHITE" />
+                  <Button fx:id="btnDelete" layoutX="298.0" layoutY="38.0" mnemonicParsing="false" onAction="#onDelete" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE" />
+                  <Button fx:id="btnUpdate" layoutX="298.0" layoutY="38.0" mnemonicParsing="false" onAction="#onUpdate" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: blue;" text="Update" textFill="WHITE" />
+                  <Button fx:id="btnCancel" layoutX="298.0" layoutY="38.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: purple;" text="Cancel" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <ScrollPane prefHeight="380.0" prefWidth="390.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <TableView fx:id="tableView">
+                    <columns>
+                      <TableColumn prefWidth="26.55999755859375" />
+                      <TableColumn fx:id="tvCustomerId" prefWidth="91.6949462890625" text="CustomerID" />
+                        <TableColumn fx:id="tvCompName" prefWidth="91.6949462890625" text="CompanyName" />
+                        <TableColumn fx:id="tvContactName" prefWidth="91.6949462890625" text="ContactName" />
+                        <TableColumn fx:id="tvContactTitle" prefWidth="91.6949462890625" text="ContactTitle" />
+                        <TableColumn fx:id="tvAddress" prefWidth="91.6949462890625" text="Address" />
+                        <TableColumn fx:id="tvCity" prefWidth="91.6949462890625" text="City" />
+                        <TableColumn fx:id="tvRegion" prefWidth="91.6949462890625" text="Region" />
+                        <TableColumn fx:id="tvPostalCode" prefWidth="91.6949462890625" text="PostalCode" />
+                        <TableColumn fx:id="tvCountry" prefWidth="91.6949462890625" text="Country" />
+                        <TableColumn fx:id="tvPhone" prefWidth="91.6949462890625" text="Phone" />
+                        <TableColumn fx:id="tvFax" prefWidth="91.6949462890625" text="Fax" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="900.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.yavts2.NumbersController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <HBox fx:id="numbers" alignment="CENTER" prefHeight="163.0" prefWidth="771.0" spacing="15.0" style="-fx-border-color: #000000; -fx-border-radius: 10; -fx-border-width: 0.8; -fx-background-color: #FFFFE0;">
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </HBox>
+      <HBox fx:id="stacks" alignment="CENTER" prefHeight="163.0" prefWidth="771.0" spacing="15.0" style="-fx-border-color: black; -fx-border-radius: 15; -fx-background-color: #ECEDF2; -fx-border-width: 0.8; -fx-background-color: #d9cffa;">
+         <children>
+            <StackPane fx:id="one" prefHeight="131.0" prefWidth="75.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 1; -fx-border-style: segments(10, 15, 15, 15)  line-cap round; -fx-background-radius: 15;">
+               <children>
+                  <Label text="One" />
+               </children>
+               <padding>
+                  <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+               </padding>
+            </StackPane>
+            <StackPane fx:id="two" layoutX="26.0" layoutY="26.0" prefHeight="131.0" prefWidth="75.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 1; -fx-border-style: segments(10, 15, 15, 15)  line-cap round; -fx-background-radius: 15;">
+               <children>
+                  <Label text="Two" />
+               </children>
+               <padding>
+                  <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+               </padding>
+            </StackPane>
+            <StackPane fx:id="three" layoutX="26.0" layoutY="26.0" prefHeight="131.0" prefWidth="75.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 1; -fx-border-style: segments(10, 15, 15, 15)  line-cap round; -fx-background-radius: 15;">
+               <children>
+                  <Label contentDisplay="CENTER" text="Three" textAlignment="CENTER" />
+               </children>
+               <padding>
+                  <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+               </padding>
+            </StackPane>
+            <StackPane fx:id="four" layoutX="258.0" layoutY="26.0" prefHeight="131.0" prefWidth="75.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 1; -fx-border-style: segments(10, 15, 15, 15)  line-cap round; -fx-background-radius: 15;">
+               <children>
+                  <Label text="Four" />
+               </children>
+               <padding>
+                  <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+               </padding>
+            </StackPane>
+            <StackPane fx:id="five" layoutX="374.0" layoutY="26.0" prefHeight="131.0" prefWidth="75.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 1; -fx-border-style: segments(10, 15, 15, 15)  line-cap round; -fx-background-radius: 15;">
+               <children>
+                  <Label text="Five" />
+               </children>
+               <padding>
+                  <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+               </padding>
+            </StackPane>
+            <StackPane fx:id="six" layoutX="490.0" layoutY="26.0" prefHeight="131.0" prefWidth="75.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 1; -fx-border-style: segments(10, 15, 15, 15)  line-cap round; -fx-background-radius: 15;">
+               <children>
+                  <Label text="Six" />
+               </children>
+               <padding>
+                  <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+               </padding>
+            </StackPane>
+            <StackPane fx:id="seven" layoutX="426.0" layoutY="26.0" prefHeight="131.0" prefWidth="75.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 1; -fx-border-style: segments(10, 15, 15, 15)  line-cap round; -fx-background-radius: 15;">
+               <children>
+                  <Label text="Seven" />
+               </children>
+               <padding>
+                  <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+               </padding>
+            </StackPane>
+            <StackPane fx:id="eight" layoutX="506.0" layoutY="26.0" prefHeight="131.0" prefWidth="75.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 1; -fx-border-style: segments(10, 15, 15, 15)  line-cap round; -fx-background-radius: 15;">
+               <children>
+                  <Label text="Eight" />
+               </children>
+               <padding>
+                  <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+               </padding>
+            </StackPane>
+            <StackPane fx:id="nine" layoutX="586.0" layoutY="26.0" prefHeight="131.0" prefWidth="75.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 1; -fx-border-style: segments(10, 15, 15, 15)  line-cap round; -fx-background-radius: 15;">
+               <children>
+                  <Label text="Nine" />
+               </children>
+               <padding>
+                  <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+               </padding>
+            </StackPane>
+            <StackPane fx:id="ten" layoutX="586.0" layoutY="26.0" prefHeight="131.0" prefWidth="75.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 1; -fx-border-style: segments(10, 15, 15, 15)  line-cap round; -fx-background-radius: 15;">
+               <children>
+                  <Label text="Ten" />
+               </children>
+               <padding>
+                  <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+               </padding>
+            </StackPane>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="91.0" prefWidth="948.0">
+         <children>
+            <Label fx:id="text">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="877.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onSubmit" prefWidth="100.0" text="Submit" />
+                  <Button mnemonicParsing="false" onAction="#onReset" prefWidth="100.0" text="Reset" />
+                  <Button mnemonicParsing="false" onAction="#onClose" prefWidth="100.0" text="Close" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
